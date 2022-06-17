@@ -159,7 +159,7 @@ footer .footer__h4 {
     font-weight: bold;    
 }
 
-.carrusel-imagenes {
+/* .carrusel-imagenes {
     background-color: rgba(0, 0, 0, 0.5);
     height: 600px;
     margin-top: 20px;
@@ -194,12 +194,17 @@ footer .footer__h4 {
 .carrusel-puntitos li {
     display: inline-block;
 
-}
+} */
 
 
 /* NOSOTROS */
 
-.nosotros_container{
+#contenedor_nosotros {
+    font-family: 'barlow', sans-serif;
+
+}
+
+/* .nosotros_container{
     display:flex;
     padding: 50px;
     margin-top: 50px;
@@ -210,9 +215,9 @@ footer .footer__h4 {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-}
+} */
 
-.nosotros_container p{
+/* .nosotros_container p{
     width: 75%;
 }
 
@@ -254,7 +259,7 @@ footer .footer__h4 {
         order: -10;
     }
     
-}
+} */
 
 
 /* MAIN PRODUCTOS */

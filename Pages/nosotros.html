@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arena - Deco Home</title>
     <link rel="shortcut icon" href="../IMG/3.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -80,33 +84,42 @@
         <div class="titulo-h1">
             <H1>¡Hola! ¿Nos presentamos?</H1>
         </div>
-        <section class="nosotros_container">
-            <article class="container__sofia">
-                <picture class="sofia_img, animate__animated animate__bounce">
-                    <img src="../IMG/sofia.jpg" alt="hola soy sofía">
-                </picture>
-                    <p>¡Hola! Mi nombre es Sofía, soy de Mar del Plata, provincia de Buenos Aires Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Laboriosam quisquam doloremque enim ex, nesciunt expedita ipsa nisi
-                    quasi, dolor veritatis, hic deleniti ipsam consequatur rerum ab. Similique magnam quos molestias.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati perspiciatis officiis eligendi
-                    impedit illo delectus omnis, nisi dolorem, enim adipisci nam amet, velit vero commodi soluta quia
-                    cumque at nihil Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Mollitia qui dicta nobis
-                    temporibus voluptatem eligendi laborum ut eveniet! A voluptatem corrupti fuga incidunt corporis
-                    quasi animi libero officia at placeat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                    accusamus tempore illum quidem aspernatur natus esse labore iusto neque. Ea quis vel distinctio
-                    deleniti dolorem corrupti, soluta similique voluptates placeat!</p>
-            </article>
-            <br>
-            <br>
-            <article class="container__anto">
-                <p>¡Hola! Mi nombre es Antonella, soy la hermana menor de Sofía y estoy super feliz de tener esteemprendimiento con ella!!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                quisquam doloremque enim ex, nesciunt expedita ipsa nisi quasi, dolor veritatis, hic deleniti ipsam consequatur rerum ab.Similique magnam quos molestias. Lorem ipsum dolor sit amet consectetur,adipisicing elit. Obcaecati perspiciatis officiis eligendi impedit illo delectus omnis, nisi dolorem, enim adipisci nam amet, velit vero commodi soluta quia cumque at nihil Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> 
-                Mollitia qui dicta nobis temporibus voluptatem eligendilaborum ut eveniet! A voluptatem corrupti fuga incidunt corporis quasi animi libero officia at placeat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia accusamus tempore illum quidem aspernatur natus esse labore iusto neque. Ea quis vel distinctio deleniti dolorem corrupti, soluta similique voluptates placeat!</p>
-                <picture class="anto__img, animate__animated animate__bounce">
-                    <img src="../IMG/anto.jpg" alt="hola soy Anto">
-                </picture>
-            </article>
+        <section class="pt-5" id="contenedor_nosotros">
+            <div class="card mb-3, d-inline-flex p-2, text-bg-dark p-3, text-center" id="contenedor_sofia">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="../IMG/sofia.jpg" class="img-fluid rounded"
+                            alt="Sofia una de las creadoras de Arena Deco Home ">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body, text-start">
+                            <h2 class="card-title">¡Hola soy Sofia!</h2>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias optio
+                                molestias ratione iusto rem nam adipisci corrupti voluptatibus esse, quaerat voluptas eos
+                                officia dolorum eligendi dolores! Qui saepe quasi numquam! <br> Lorem ipsum, dolor sit amet
+                                consectetur adipisicing elit. Illo ab vitae ipsa eum dolor nulla ipsum dolores, id ad,
+                                facilis earum aperiam quae, ipsam corporis voluptate? Officia saepe laudantium
+                                exercitationem..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3, d-inline-flex p-2, text-bg-dark p-3, text-center" id="contenedor_antonella">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="../IMG/anto.jpg" class="img-fluid rounded"
+                            alt="Antonella una de las creadoras de Arena Deco Home">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body, text-start">
+                            <h2 class="card-title">¡Hola soy Antonella!</h2>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia soluta dolore aspernatur est nihil illo quia nisi. Laborum rerum voluptatibus cumque nam, sapiente repudiandae accusamus animi ab vero voluptatum aliquam?<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quisquam non est impedit, rem sit aliquid sequi possimus, molestias ab commodi molestiae dignissimos laboriosam porro distinctio? Culpa officiis neque odio..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        
     </MAIN>
 </body>
 <br>
