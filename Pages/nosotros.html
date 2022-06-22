@@ -16,18 +16,22 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&family=Montserrat:wght@100&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/f91af3e621.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!--comienzo del header-->
     <header>
         <nav class="nav">
+            <picture class="nav__logo">
+                <a href="../index.html" class="logo__link">
+                    <img src="../IMG/2.png" alt="logo arena deco home">
+                </a>
+            </picture>
+            <button class="nav__button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <ul class="nav__principal">
-                <li class="nav__logo">
-                    <a href="../index.html" class="logo__link">
-                        <img src="../IMG/1.png" alt="logo arena deco home">
-                    </a>
-                </li>
                 <li class="nav__nosotros">
                     <a href="../Pages/nosotros.html">Nosotros</a>
                 </li>
@@ -52,26 +56,26 @@
                     <form action="" method="post" class="usuario__form">
                         <ul>
                             <li class="form__input">
-                                <label for="email">email</label>
+                                <label for="email">Email</label>
                                 <input type="email" id="mail" name="user name" required>
                             </li>
                             <li class="form__input">
-                                <label for="contraseña">contraseña</label>
+                                <label for="contraseña">Contraseña</label>
                                 <input type="password" name="contraseña" id="password" required>
                             </li>
                             <li class="form__input">
-                                <button type="submit">Enviar</button>
+                                <button class= "input__button" type="submit">Enviar</button>
                             </li>
                         </ul>
                     </form>
                 </li>
-                <li>
-                    <div class="nav__new_user">
+                <li class="nav__new_user">
+                    <div >
                         <a href="../Pages/nuevo_usuario.html">¿Nuevo usuario?</a>
                     </div>
                 </li>
                 <li class="nav__carrito">
-                    <a href="../Pages/carrito.html"> <img src="../IMG/carrito.png" alt="carrito de compras">
+                    <a href="../Pages/carrito.html"> <img src="../IMG/carrito.png" alt="carrito de compras" >
                     </a>
                 </li>
             </ul>
@@ -82,42 +86,33 @@
     <br>
     <main>
         <div class="titulo-h1">
-            <H1>¡Hola! ¿Nos presentamos?</H1>
+            <h1>¡Hola! ¿Nos presentamos?</h1>
         </div>
-        <section class="pt-5" id="contenedor_nosotros">
-            <div class="card mb-3, d-inline-flex p-2, text-bg-dark p-3, text-center" id="contenedor_sofia">
-                <div class="row g-0">
-                    <div class="col-md-3">
-                        <img src="../IMG/sofia.jpg" class="img-fluid rounded"
-                            alt="Sofia una de las creadoras de Arena Deco Home ">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body, text-start">
-                            <h2 class="card-title">¡Hola soy Sofia!</h2>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias optio
-                                molestias ratione iusto rem nam adipisci corrupti voluptatibus esse, quaerat voluptas eos
-                                officia dolorum eligendi dolores! Qui saepe quasi numquam! <br> Lorem ipsum, dolor sit amet
-                                consectetur adipisicing elit. Illo ab vitae ipsa eum dolor nulla ipsum dolores, id ad,
-                                facilis earum aperiam quae, ipsam corporis voluptate? Officia saepe laudantium
-                                exercitationem..</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3, d-inline-flex p-2, text-bg-dark p-3, text-center" id="contenedor_antonella">
-                <div class="row g-0">
-                    <div class="col-md-3">
-                        <img src="../IMG/anto.jpg" class="img-fluid rounded"
-                            alt="Antonella una de las creadoras de Arena Deco Home">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body, text-start">
-                            <h2 class="card-title">¡Hola soy Antonella!</h2>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia soluta dolore aspernatur est nihil illo quia nisi. Laborum rerum voluptatibus cumque nam, sapiente repudiandae accusamus animi ab vero voluptatum aliquam?<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quisquam non est impedit, rem sit aliquid sequi possimus, molestias ab commodi molestiae dignissimos laboriosam porro distinctio? Culpa officiis neque odio..</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="nosotros_container">
+            <article class="container__sofia">
+                <picture class="sofia_img">
+                    <img src="../IMG/sofia.jpg" alt="hola soy sofía">
+                </picture>
+                    <p>¡Hola! Mi nombre es Sofía, soy de Mar del Plata, provincia de Buenos Aires Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Laboriosam quisquam doloremque enim ex, nesciunt expedita ipsa nisi
+                    quasi, dolo
+                    impedit illo delectus omnis, nisi dolorem, enim adipisci nam amet, velit vero commodi soluta quia
+                    cumque at nihil Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Mollitia qui dicta nobis
+                    temporibus voluptatem eligendi laborum ut eveniet! A voluptatem corrupti fuga incidunt corporis
+                    quasi animi libero officia at placeat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                    accustinctio
+                    deleniti dolorem corrupti, soluta similique voluptates placeat!</p>
+            </article>
+            <br>
+            <br>
+            <article class="container__anto">
+                <p>¡Hola! Mi nombre es Antonella, soy la hermana menor de Sofía y estoy super feliz de tener esteemprendimiento con ella!!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                tur,adipisicing elit. Obcaecati perspiciatis officiis eligendi impedit illo delectus omnis, nisi dolorem, enim adipisci nam amet, velit vero commodi soluta quia cumque at nihil Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> 
+                Mollitia qui dicta nobis temporibus voluptatem eligendilaborum ut eveniet! A voluptatem officia at placeat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia accusamus tempore illum quidem aspernatur natus esse labore iusto neque. Ea quis vel distinctio deleniti dolorem corrupti, soluta similique voluptates placeat!</p>
+                <picture class="anto__img">
+                    <img src="../IMG/anto.jpg" alt="hola soy Anto">
+                </picture>
+            </article>
         </section>
         
     </MAIN>

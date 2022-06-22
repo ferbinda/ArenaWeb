@@ -7,23 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arena - Deco Home</title>
     <link rel="shortcut icon" href="../IMG/3.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&family=Montserrat:wght@100&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/f91af3e621.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav class="nav">
+            <picture class="nav__logo">
+                <a href="../index.html" class="logo__link">
+                    <img src="../IMG/2.png" alt="logo arena deco home">
+                </a>
+            </picture>
+            <button class="nav__button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <ul class="nav__principal">
-                <li class="nav__logo">
-                    <a href="../index.html" class="logo__link">
-                        <img src="../IMG/1.png" alt="logo arena deco home">
-                    </a>
-                </li>
                 <li class="nav__nosotros">
                     <a href="../Pages/nosotros.html">Nosotros</a>
                 </li>
@@ -48,26 +52,26 @@
                     <form action="" method="post" class="usuario__form">
                         <ul>
                             <li class="form__input">
-                                <label for="email">email</label>
+                                <label for="email">Email</label>
                                 <input type="email" id="mail" name="user name" required>
                             </li>
                             <li class="form__input">
-                                <label for="contraseña">contraseña</label>
+                                <label for="contraseña">Contraseña</label>
                                 <input type="password" name="contraseña" id="password" required>
                             </li>
                             <li class="form__input">
-                                <button type="submit">Enviar</button>
+                                <button class= "input__button" type="submit">Enviar</button>
                             </li>
                         </ul>
                     </form>
                 </li>
-                <li>
-                    <div class="nav__new_user">
+                <li class="nav__new_user">
+                    <div >
                         <a href="../Pages/nuevo_usuario.html">¿Nuevo usuario?</a>
                     </div>
                 </li>
                 <li class="nav__carrito">
-                    <a href="../Pages/carrito.html"> <img src="../IMG/carrito.png" alt="carrito de compras">
+                    <a href="../Pages/carrito.html"> <img src="../IMG/carrito.png" alt="carrito de compras" >
                     </a>
                 </li>
             </ul>
@@ -78,47 +82,53 @@
     <br>
     <main>
         <div class="titulo-h1">
-            <H1>PRODUCTOS</H1>
+            <h1>Estos son nuestros productos</h1>
         </div>
         <Section class="container_main">
             <article class="main__producto">
                 <h2>ALMOHADONES</h2>
-                <a href="../Pages/productos/almohadones.html">
-                    <img src="../IMG/almohadonesprod.png" alt="almohadones en el sofá">
-                </a>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, reiciendis totam. Eius sequi hic
-                    dolore, cupiditate expedita nisi nam in tempora mollitia quisquam atque. Delectus vitae fugiat sint
-                    accusantium vel Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aperiam
-                    aspernatur illum id ipsum labore. Alias accusamus eligendi totam nemo odit? Blanditiis reiciendis
-                    aut nostrum modi iusto, sint eos perferendis Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Reiciendis officiis, error, iste hic magni labore, incidunt vero sapiente eligendi
-                    necessitatibus facilis! Reprehenderit dolore id tempora omnis eligendi delectus rem sit.</p>
+                <div>
+                    <a href="../Pages/productos/almohadones.html">
+                        <img src="../IMG/almohadonesprod.png" alt="almohadones en el sofá">
+                    </a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, reiciendis totam. Eius sequi hic
+                        dolore, cupiditate expedita nisi nam in tempora mollitia quisquam atque. Delectus vitae fugiat sint
+                        accusantium vel Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aperiam
+                        aspernatur illum id ipsum labore. Alias accusamus eligendi totam nemo odit? Blanditiis reiciendis
+                        aut nostrum modi iusto, sint eos perferendis Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Reiciendis officiis, error, iste hic magni labore, incidunt vero sapiente eligendi
+                        necessitatibus facilis! Reprehenderit dolore id tempora omnis eligendi delectus rem sit.</p>
+                </div>
             </article>
             <article class="main__producto">
                 <h2>ESPEJOS</h2>
-                <a href="../Pages/productos/espejos.html">
-                    <img src="../IMG/espejoprod.png" alt="espejo en pared">
-                </a>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, reiciendis totam. Eius sequi hic
-                    dolore, cupiditate expedita nisi nam in tempora mollitia quisquam atque. Delectus vitae fugiat sint
-                    accusantium vel Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aperiam
-                    aspernatur illum id ipsum labore. Alias accusamus eligendi totam nemo odit? Blanditiis reiciendis
-                    aut nostrum modi iusto, sint eos perferendis Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Reiciendis officiis, error, iste hic magni labore, incidunt vero sapiente eligendi
-                    necessitatibus facilis! Reprehenderit dolore id tempora omnis eligendi delectus rem sit.</p>
+                <div>
+                    <a href="../Pages/productos/espejos.html">
+                        <img src="../IMG/espejoprod.png" alt="espejo en pared">
+                    </a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, reiciendis totam. Eius sequi hic
+                        dolore, cupiditate expedita nisi nam in tempora mollitia quisquam atque. Delectus vitae fugiat sint
+                        accusantium vel Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aperiam
+                        aspernatur illum id ipsum labore. Alias accusamus eligendi totam nemo odit? Blanditiis reiciendis
+                        aut nostrum modi iusto, sint eos perferendis Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Reiciendis officiis, error, iste hic magni labore, incidunt vero sapiente eligendi
+                        necessitatibus facilis! Reprehenderit dolore id tempora omnis eligendi delectus rem sit.</p>
+                </div>
             </article>
             <article class="main__producto">
                 <h2>TAPICES</h2>
-                <a href="../Pages/productos/tapices.html">
-                    <img src="../IMG/tapizprod.png" alt="Tapices para pared">
-                </a>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, reiciendis totam. Eius sequi hic
+                <div>
+                    <a href="../Pages/productos/tapices.html">
+                        <img src="../IMG/tapizprod.png" alt="Tapices para pared">
+                    </a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, reiciendis totam. Eius sequi hic
                     dolore, cupiditate expedita nisi nam in tempora mollitia quisquam atque. Delectus vitae fugiat sint
                     accusantium vel Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aperiam
                     aspernatur illum id ipsum labore. Alias accusamus eligendi totam nemo odit? Blanditiis reiciendis
                     aut nostrum modi iusto, sint eos perferendis Lorem ipsum dolor sit, amet consectetur adipisicing
                     elit. Reiciendis officiis, error, iste hic magni labore, incidunt vero sapiente eligendi
                     necessitatibus facilis! Reprehenderit dolore id tempora omnis eligendi delectus rem sit.</p>
+                </div>
             </article>
         </Section>
     </main>

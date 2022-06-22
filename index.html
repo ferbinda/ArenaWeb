@@ -13,17 +13,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/f91af3e621.js" crossorigin="anonymous"></script>
 </head>
 
 <body>    
     <header>
         <nav class="nav">
+            <picture class="nav__logo">
+                <a href="index.html" class="logo__link">
+                    <img src="./IMG/2.png" alt="logo arena deco home">
+                </a>
+            </picture>
+            <button class="nav__button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <ul class="nav__principal">
-                <li class="nav__logo">
-                    <a href="index.html" class="logo__link">
-                        <img src="./IMG/1.png" alt="logo arena deco home">
-                    </a>
-                </li>
                 <li class="nav__nosotros">
                     <a href="./Pages/nosotros.html">Nosotros</a>
                 </li>
@@ -56,7 +60,7 @@
                                 <input type="password" name="contraseña" id="password" required>
                             </li>
                             <li class="form__input">
-                                <button type="submit">Enviar</button>
+                                <button class= "input__button" type="submit">Enviar</button>
                             </li>
                         </ul>
                     </form>
@@ -78,7 +82,7 @@
     <br>
     <main>
         <div class="titulo-h1">
-            <H1>BIENVENIDOS A ARENA DECO-HOME</H1>
+            <h1>BIENVENIDOS A ARENA DECO-HOME</h1>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide, mt-5" data-bs-ride="true">
             <div class="carousel-indicators">
