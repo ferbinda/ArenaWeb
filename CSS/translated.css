@@ -25,60 +25,82 @@ ul {
   list-style-type: none; }
 
 a {
-  font-family: var(--font-title);
+  font-family: "montserrat", sans-serif;
   text-decoration: none;
-  color: var(--text-a); }
+  color: #1a1a1a; }
 
 img {
   width: 100%; }
 
 h1 {
-  font-family: var(--font-title);
-  font-size: var(--text-large);
+  font-family: "montserrat", sans-serif;
+  font-size: 5em;
   text-align: center;
   padding: 10px;
-  background-color: var(--primary); }
+  background-color: rgba(182, 147, 82, 0.6); }
 
 /* PARTIALS */
 .nav {
   display: flex;
   flex-wrap: wrap;
   background-image: linear-gradient(to bottom, rgba(182, 147, 82, 0.5), rgba(182, 147, 82, 0.3), transparent);
-  padding-left: var(--spacing-large);
-  padding-right: var(--spacing-large);
+  padding-left: 5rem;
+  padding-right: 5rem;
   justify-content: space-evenly; }
   .nav .nav__button {
-    color: var(--text-p);
-    font-size: var(--text-large);
+    color: white;
+    font-size: 5em;
     background-color: transparent;
     border: none;
-    padding: 0 var(--spacing-small);
+    padding: 0 1.5rem;
     display: none;
     align-items: center; }
   .nav .nav__principal {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    gap: var(--spacing-large);
-    font-family: var(--font-title);
+    gap: 5rem;
+    font-family: "montserrat", sans-serif;
     font-weight: bold;
-    font-size: var(--text-medium); }
+    font-size: 2.5em; }
     .nav .nav__principal a {
       text-decoration: none;
-      color: var(--text-a); }
+      color: #1a1a1a; }
+    .nav .nav__principal li a:hover {
+      border-bottom: rgba(0, 0, 0, 0.5) solid 2px;
+      transition: .1s; }
+    .nav .nav__principal .logo__link:hover {
+      background-color: transparent;
+      border-bottom: none; }
     .nav .nav__principal .nav__productos ul {
       display: none;
       position: absolute; }
+    .nav .nav__principal .nav__productos .nav__productos:hover ul {
+      display: flex;
+      gap: 24px;
+      padding-top: 15px; }
     .nav .nav__principal .nav__usuario ul {
       display: none;
       position: absolute; }
+    .nav .nav__principal .nav__usuario:hover ul {
+      display: flex;
+      gap: 24px;
+      padding: 15px; }
     .nav .nav__principal .nav__usuario .form__input {
-      font-size: var(--text-xsmall); }
+      font-size: 0.8em; }
       .nav .nav__principal .nav__usuario .form__input input {
         background: rgba(182, 147, 82, 0.2);
         border: none;
         outline: none;
-        font-size: var(--text-p); }
+        font-size: white; }
+        .nav .nav__principal .nav__usuario .form__input input:active {
+          background: transparent; }
+        .nav .nav__principal .nav__usuario .form__input input:focus {
+          background: transparent; }
+      .nav .nav__principal .nav__usuario .form__input .input__button {
+        background-color: transparent;
+        border: rgba(182, 147, 82, 0.6) 1px solid;
+        border-radius: 15px; }
     .nav .nav__principal .nav__carrito img {
       width: 30px; }
   .nav .nav__logo img {
@@ -120,12 +142,12 @@ h1 {
 
 /* VIEWS */
 .container_main {
-  margin: 0 var(--spacing-large);
-  font-family: var(--font-principal);
+  margin: 0 5rem;
+  font-family: "barlow", sans-serif;
   text-align: center;
   display: flex;
-  gap: var(--spacing-medium);
-  font-size: var(--text-small); }
+  gap: 2.5rem;
+  font-size: 1.5em; }
   .container_main img {
     width: 297px;
     border-radius: 15px; }
@@ -139,23 +161,23 @@ h1 {
     border-radius: 15px; }
     .container_main .main__producto p {
       text-align: center;
-      color: var(--text-p);
-      padding: 10px var(--spacing-small); }
+      color: white;
+      padding: 10px 1.5rem; }
     .container_main .main__producto h2 {
       width: 100%;
       background-color: rgba(182, 147, 82, 0.35);
       color: #c9c5af;
-      font-family: var(--font-title);
+      font-family: "montserrat", sans-serif;
       padding-top: 5px;
       padding-bottom: 5px; }
 
 /* NOSOTROS */
 .nosotros_container {
   display: flex;
-  padding: var(--spacing-large);
-  font-family: var(--font-principal);
+  padding: 5rem;
+  font-family: "barlow", sans-serif;
   color: white;
-  font-size: var(--text-small);
+  font-size: 1.5em;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center; }
@@ -166,17 +188,17 @@ h1 {
   .nosotros_container .container__sofia {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-small);
-    background-color: var(--secondary);
-    padding: var(--spacing-medium);
+    gap: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2.5rem;
     border-radius: 15px; }
   .nosotros_container .container__anto {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--secondary);
-    gap: var(--spacing-small);
+    background-color: rgba(0, 0, 0, 0.5);
+    gap: 1.5rem;
     text-align: right;
-    padding: var(--spacing-medium);
+    padding: 2.5rem;
     justify-content: flex-end;
     border-radius: 15px; }
 
@@ -184,22 +206,22 @@ h1 {
 /*NAV MEDIAQ */
 @media screen and (max-width: 320px) {
   h1 {
-    font-size: var(--text-medium); }
+    font-size: 2.5em; }
   .nav__principal {
-    font-size: var(--text-small);
+    font-size: 1.5em;
     gap: 70px; } }
 
 @media screen and (max-width: 768px) {
   .nav__principal {
-    font-size: var(--text-small); }
+    font-size: 1.5em; }
   h1 {
-    font-size: var(--text-medium); } }
+    font-size: 2.5em; } }
 
 /* FOOTER MEDIAQ */
 @media screen and (max-width: 470px) {
   .footer__social {
     flex-direction: column;
-    gap: var(--spacing-small); }
+    gap: 1.5rem; }
   .footer__social img {
     width: 25px; }
   .footer__fiscal {
@@ -211,13 +233,13 @@ h1 {
 @media screen and (max-width: 1424px) {
   .nosotros_container {
     padding: 0;
-    font-size: var(--text-small); }
+    font-size: 1.5em; }
   .container__anto {
     justify-content: space-around;
     text-align: center;
-    padding: var(--spacing-xsmall); }
+    padding: 1rem; }
   .container__sofia {
-    padding: var(--spacing-xsmall);
+    padding: 1rem;
     justify-content: space-around;
     text-align: center; }
   .container__anto .anto__img {

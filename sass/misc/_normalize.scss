@@ -24,9 +24,9 @@ ul {
 }
 
 a{
-    font-family: var(--font-title);
+    font-family: $font-title;
     text-decoration: none;
-    color: var(--text-a);
+    color: $text-a;
 }
 
 img{
@@ -34,10 +34,10 @@ img{
 }
 
 h1 {
-    font-family: var(--font-title);
-    font-size: var(--text-large);
+    font-family: $font-title;
+    font-size: $text-large;
     text-align: center;
     padding: 10px;
-    background-color: var(--primary);
+    background-color: $primary;
 }
 

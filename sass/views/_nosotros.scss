@@ -2,10 +2,10 @@
 
 .nosotros_container{
     display:flex;
-    padding: var(--spacing-large);
-    font-family: var(--font-principal);
-    color: rgb(255, 255, 255);
-    font-size: var(--text-small);
+    padding: $spacing-large;
+    font-family: $font-principal;
+    color: $text-p;
+    font-size: $text-small;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -18,18 +18,18 @@
         .container__sofia{
             display: flex;
             flex-wrap: wrap;
-            gap: var(--spacing-small);
-            background-color: var(--secondary);
-            padding: var(--spacing-medium);
+            gap: $spacing-small;
+            background-color: $secondary;
+            padding: $spacing-medium;
             border-radius: 15px;
         }
         .container__anto{
             display: flex;
             flex-wrap: wrap;
-            background-color: var(--secondary);
-            gap: var(--spacing-small);
+            background-color: $secondary;
+            gap: $spacing-small;
             text-align: right;
-            padding: var(--spacing-medium);
+            padding: $spacing-medium;
             justify-content: flex-end;
             border-radius: 15px;
         }

@@ -2,15 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     background-image: linear-gradient(to bottom, rgba(182, 147, 82, 0.5), rgba(182, 147, 82, 0.3), transparent);
-    padding-left: var(--spacing-large);
-    padding-right: var(--spacing-large);
+    padding-left: $spacing-large;
+    padding-right: $spacing-large;
     justify-content: space-evenly;
         .nav__button{
-            color: var(--text-p);
-            font-size: var(--text-large);
+            color: $text-p;
+            font-size: $text-large;
             background-color: transparent;
             border: none;
-            padding: 0 var(--spacing-small);
+            padding: 0 $spacing-small;
             display: none;
             align-items: center;
         }
@@ -18,30 +18,61 @@
             display: flex;
             flex-wrap: wrap;
             align-items: flex-end;
-            gap: var(--spacing-large);
-            font-family: var(--font-title);
+            gap: $spacing-large;
+            font-family: $font-title;
             font-weight: bold;
-            font-size: var(--text-medium);
+            font-size: $text-medium;
                 a{
                 text-decoration: none;
-                color: var(--text-a);    
+                color: $text-a;    
                 }
-                .nav__productos ul{
-                     display: none;
-                     position: absolute;
+                li a:hover{
+                    border-bottom: rgba(0, 0, 0, 0.5) solid 2px;
+                    transition: .1s;
+                }
+                .logo__link:hover{
+                    background-color: transparent;
+                    border-bottom: none;
+                }
+                .nav__productos {
+                    ul{
+                        display: none;
+                        position: absolute;
+                    }
+                    .nav__productos:hover ul {
+                        display: flex;
+                        gap: 24px;
+                        padding-top: 15px;    
+                    }                    
                  }
                 .nav__usuario{ 
                     ul {
                     display: none;
                     position: absolute;
                     }
+                    &:hover ul {
+                        display: flex;
+                        gap: 24px;
+                        padding: 15px;
+                    }
                     .form__input {
-                        font-size: var(--text-xsmall);
+                        font-size: $text-xsmall;
                         input{
                             background: rgba(182, 147, 82, 0.2);
                             border: none;    
                             outline: none;
-                            font-size: var(--text-p);   
+                            font-size: $text-p; 
+                                &:active{
+                                    background: transparent;
+                                }
+                                &:focus{
+                                    background: transparent;
+                                }
+                        }
+                        .input__button{
+                            background-color:transparent;
+                            border: $primary 1px solid;
+                            border-radius:15px;
                         }
                     }
 
