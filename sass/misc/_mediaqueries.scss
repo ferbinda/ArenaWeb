@@ -1,0 +1,83 @@
+/*NAV MEDIAQ */
+
+@media screen and (max-width: 320px) {
+    h1{
+        font-size: var(--text-medium);
+    }    
+    .nav__principal{
+        font-size: var(--text-small);
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav__principal{
+        font-size: var(--text-small);
+    }
+    
+    h1 {
+        font-size: var(--text-medium);  
+    }
+}
+
+/* FOOTER MEDIAQ */
+
+@media screen and (max-width:470px) {
+    .footer__social{
+        flex-direction: column;
+        gap: var(--spacing-small);
+    }
+    
+    .footer__social img{
+        width: 25px;
+    }
+
+    .footer__fiscal {
+        width: 10%;
+    }
+    .footer__copy{
+        width: 10%
+    }
+}
+
+/* NOSOTROS MEDIAQ */
+@media screen and (max-width: 1424px) {
+    .nosotros_container{
+        padding: 0;
+        font-size: var(--text-small);
+    
+    }
+    
+    .container__anto{
+        justify-content:space-around;
+        text-align: center;
+        padding: var(--spacing-xsmall);
+    }
+    .container__sofia{
+        padding: var(--spacing-xsmall);
+        justify-content:space-around;
+        text-align: center;
+    }
+
+    .container__anto .anto__img{
+        order: -10;
+    }
+    
+}
+
+/* MAIN PRODUCTOS GRAL. MEDIA Q*/
+@media screen and (max-width: 1255px){
+    .container_main {
+        flex-wrap: wrap;
+        margin: 10px 0px;
+    }
+    .nosotros_container p{
+        width: 95%;
+    }
+
+    .main__producto{
+        padding: 0;
+    }
+    
+}
+

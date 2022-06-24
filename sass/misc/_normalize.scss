@@ -1,0 +1,43 @@
+/* NORMALIZE */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image:url(./../IMG/FONDO.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(0.6);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    font-family: var(--font-title);
+    text-decoration: none;
+    color: var(--text-a);
+}
+
+img{
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: var(--text-large);
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary);
+}
+

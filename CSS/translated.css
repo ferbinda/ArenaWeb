@@ -1,0 +1,234 @@
+/* MISC */
+/* COLORS */
+/* SPACINGS */
+/* FONT-FAMILY */
+/* FONT-SIZES */
+/* NORMALIZE */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: url(./../IMG/FONDO.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(0.6); }
+
+ul {
+  list-style-type: none; }
+
+a {
+  font-family: var(--font-title);
+  text-decoration: none;
+  color: var(--text-a); }
+
+img {
+  width: 100%; }
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--text-large);
+  text-align: center;
+  padding: 10px;
+  background-color: var(--primary); }
+
+/* PARTIALS */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to bottom, rgba(182, 147, 82, 0.5), rgba(182, 147, 82, 0.3), transparent);
+  padding-left: var(--spacing-large);
+  padding-right: var(--spacing-large);
+  justify-content: space-evenly; }
+  .nav .nav__button {
+    color: var(--text-p);
+    font-size: var(--text-large);
+    background-color: transparent;
+    border: none;
+    padding: 0 var(--spacing-small);
+    display: none;
+    align-items: center; }
+  .nav .nav__principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: var(--spacing-large);
+    font-family: var(--font-title);
+    font-weight: bold;
+    font-size: var(--text-medium); }
+    .nav .nav__principal a {
+      text-decoration: none;
+      color: var(--text-a); }
+    .nav .nav__principal .nav__productos ul {
+      display: none;
+      position: absolute; }
+    .nav .nav__principal .nav__usuario ul {
+      display: none;
+      position: absolute; }
+    .nav .nav__principal .nav__usuario .form__input {
+      font-size: var(--text-xsmall); }
+      .nav .nav__principal .nav__usuario .form__input input {
+        background: rgba(182, 147, 82, 0.2);
+        border: none;
+        outline: none;
+        font-size: var(--text-p); }
+    .nav .nav__principal .nav__carrito img {
+      width: 30px; }
+  .nav .nav__logo img {
+    width: 250px;
+    padding-top: 25px; }
+
+.footer .footer__h4 {
+  text-align: center;
+  font-family: 'barlow', sans-serif;
+  font-size: 18px;
+  background-color: rgba(182, 147, 82, 0.5);
+  height: auto; }
+
+.footer .footer__container {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to top, rgba(182, 147, 82, 0.6), transparent);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 12px; }
+  .footer .footer__container .footer__copy {
+    display: flex;
+    flex: 1;
+    color: white;
+    justify-content: center; }
+  .footer .footer__container .footer__social {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    flex: 1;
+    padding-left: 35px;
+    padding-right: 35px; }
+  .footer .footer__container .footer__fiscal {
+    display: flex;
+    flex: 1;
+    justify-content: center; }
+    .footer .footer__container .footer__fiscal a img {
+      width: 100px; }
+
+/* VIEWS */
+.container_main {
+  margin: 0 var(--spacing-large);
+  font-family: var(--font-principal);
+  text-align: center;
+  display: flex;
+  gap: var(--spacing-medium);
+  font-size: var(--text-small); }
+  .container_main img {
+    width: 297px;
+    border-radius: 15px; }
+  .container_main .main__producto {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-radius: 15px; }
+    .container_main .main__producto p {
+      text-align: center;
+      color: var(--text-p);
+      padding: 10px var(--spacing-small); }
+    .container_main .main__producto h2 {
+      width: 100%;
+      background-color: rgba(182, 147, 82, 0.35);
+      color: #c9c5af;
+      font-family: var(--font-title);
+      padding-top: 5px;
+      padding-bottom: 5px; }
+
+/* NOSOTROS */
+.nosotros_container {
+  display: flex;
+  padding: var(--spacing-large);
+  font-family: var(--font-principal);
+  color: white;
+  font-size: var(--text-small);
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .nosotros_container p {
+    width: 65%; }
+  .nosotros_container img {
+    border-radius: 15px; }
+  .nosotros_container .container__sofia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-small);
+    background-color: var(--secondary);
+    padding: var(--spacing-medium);
+    border-radius: 15px; }
+  .nosotros_container .container__anto {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary);
+    gap: var(--spacing-small);
+    text-align: right;
+    padding: var(--spacing-medium);
+    justify-content: flex-end;
+    border-radius: 15px; }
+
+/* MEDIA QUERIES */
+/*NAV MEDIAQ */
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: var(--text-medium); }
+  .nav__principal {
+    font-size: var(--text-small);
+    gap: 70px; } }
+
+@media screen and (max-width: 768px) {
+  .nav__principal {
+    font-size: var(--text-small); }
+  h1 {
+    font-size: var(--text-medium); } }
+
+/* FOOTER MEDIAQ */
+@media screen and (max-width: 470px) {
+  .footer__social {
+    flex-direction: column;
+    gap: var(--spacing-small); }
+  .footer__social img {
+    width: 25px; }
+  .footer__fiscal {
+    width: 10%; }
+  .footer__copy {
+    width: 10%; } }
+
+/* NOSOTROS MEDIAQ */
+@media screen and (max-width: 1424px) {
+  .nosotros_container {
+    padding: 0;
+    font-size: var(--text-small); }
+  .container__anto {
+    justify-content: space-around;
+    text-align: center;
+    padding: var(--spacing-xsmall); }
+  .container__sofia {
+    padding: var(--spacing-xsmall);
+    justify-content: space-around;
+    text-align: center; }
+  .container__anto .anto__img {
+    order: -10; } }
+
+/* MAIN PRODUCTOS GRAL. MEDIA Q*/
+@media screen and (max-width: 1255px) {
+  .container_main {
+    flex-wrap: wrap;
+    margin: 10px 0px; }
+  .nosotros_container p {
+    width: 95%; }
+  .main__producto {
+    padding: 0; } }
