@@ -1,34 +1,33 @@
 .container_main {
-    margin: 0 $spacing-large;
-    font-family: $font-principal;
+    margin: $spacing-small $spacing-large;
+    font-family: map-get($font-family,principal );
     text-align: center;
     display: flex;
     gap: $spacing-medium;
-    font-size: $text-small;
+    font-size: map-get($font-family, principal);
         img{
-            margin-top: $spacing-xsmall ;
+            margin-top: $spacing-xsmall;
             width: 297px;
             border-radius: 15px;
         }
         .main__producto {
             width: 100%;
-            background-color: $secondary;
+            background-color: map-get($Colors, secondary);
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             padding: $spacing-small;
-            border-radius: 15px;
-                
+            border-radius: $spacing-small;
                 p {
                     text-align: center;
-                    color: $text-p;
+                    color: map-get($Colors, text-p);
                     padding: $spacing-xsmall $spacing-small;
                 }
                 h2 {
                     width: 100%;
-                    background-color: rgba(182, 147, 82, 0.35);
-                    color: rgb(201, 197, 175);
-                    font-family: $font-title;
+                    background-color: map-get($Colors, h2);
+                    color: map-get($Colors, text-h2);
+                    font-family: map-get($font-family , title );
                     padding-top: 5px;
                     padding-bottom: 5px;
                 }

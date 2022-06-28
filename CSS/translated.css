@@ -1,8 +1,8 @@
 /* MISC */
-/* COLORS */
 /* SPACINGS */
-/* FONT-FAMILY */
 /* FONT-SIZES */
+/* COLORS MAP AND VARIABLE*/
+/* FONT-FAMILY  MAP AND VARIABLE*/
 /* NORMALIZE */
 * {
   margin: 0%;
@@ -109,9 +109,9 @@ h1 {
 
 .footer .footer__h4 {
   text-align: center;
-  font-family: 'barlow', sans-serif;
+  font-family: "barlow", sans-serif, sans-serif;
   font-size: 18px;
-  background-color: rgba(182, 147, 82, 0.5);
+  background-color: rgba(182, 147, 82, 0.6);
   height: auto; }
 
 .footer .footer__container {
@@ -149,6 +149,7 @@ h1 {
   gap: 2.5rem;
   font-size: 1.5em; }
   .container_main img {
+    margin-top: 1rem;
     width: 297px;
     border-radius: 15px; }
   .container_main .main__producto {
@@ -157,12 +158,12 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 1.5rem;
     border-radius: 15px; }
     .container_main .main__producto p {
       text-align: center;
       color: white;
-      padding: 10px 1.5rem; }
+      padding: 1rem 1.5rem; }
     .container_main .main__producto h2 {
       width: 100%;
       background-color: rgba(182, 147, 82, 0.35);
@@ -201,6 +202,37 @@ h1 {
     padding: 2.5rem;
     justify-content: flex-end;
     border-radius: 15px; }
+
+.container_main {
+  margin: 1.5rem 5rem;
+  font-family: "barlow" sans-serif;
+  text-align: center;
+  display: flex;
+  gap: 2.5rem;
+  font-size: "barlow" sans-serif; }
+  .container_main img {
+    margin-top: 1rem;
+    width: 297px;
+    border-radius: 15px; }
+  .container_main .main__producto {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    border-radius: 1.5rem; }
+    .container_main .main__producto p {
+      text-align: center;
+      color: white;
+      padding: 1rem 1.5rem; }
+    .container_main .main__producto h2 {
+      width: 100%;
+      background-color: rgba(182, 147, 82, 0.35);
+      color: #c9c5af;
+      font-family: "montserrat" sans-serif;
+      padding-top: 5px;
+      padding-bottom: 5px; }
 
 /* MEDIA QUERIES */
 /*NAV MEDIAQ */

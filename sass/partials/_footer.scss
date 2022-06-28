@@ -1,15 +1,15 @@
 .footer{
     .footer__h4 {
         text-align: center;
-        font-family: 'barlow', sans-serif;
+        font-family: $font-principal , sans-serif;
         font-size: 18px;
-        background-color: rgba(182, 147, 82, 0.5);
+        background-color: $primary;
         height: auto;
     }
     .footer__container {
         display: flex;
         align-items: center;
-        background-image: linear-gradient(to top, rgba(182, 147, 82, 0.6), transparent );
+        background-image: linear-gradient(to top, $primary, transparent );
         padding-left: 25px;
         padding-right: 25px;
         padding-top: 12px;
@@ -17,7 +17,7 @@
         .footer__copy {
             display: flex;
             flex: 1;
-            color: rgb(255, 255, 255);
+            color: $text-p;
             justify-content: center;
         }
 
@@ -33,7 +33,6 @@
             display: flex;
             flex: 1;
             justify-content: center;
-            
                 a img{
                 width: 100px;
                 }

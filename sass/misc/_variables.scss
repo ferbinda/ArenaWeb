@@ -1,29 +1,44 @@
 
-/* COLORS */
-
-    $primary: rgba(182, 147, 82, 0.6);
-    $secondary: rgba(0, 0, 0, 0.5);
-    $alternative: rgba(0, 0, 0, 0.15);
-    $text-p: rgb(255, 255, 255);
-    $text-a: #1a1a1a;
-
-    /* SPACINGS */
+/* SPACINGS */
 
     $spacing-large: 5rem;
     $spacing-medium: 2.5rem;
     $spacing-small: 1.5rem;
     $spacing-xsmall: 1rem;
 
-    /* FONT-FAMILY */
-
-    $font-principal: 'barlow', sans-serif;
-    $font-title:'montserrat', sans-serif;
-
-    /* FONT-SIZES */
+/* FONT-SIZES */
 
     $text-large: 5em;
     $text-medium: 2.5em;
     $text-base: 2em;
     $text-small: 1.5em;
     $text-xsmall:.8em;
+
+/* COLORS MAP AND VARIABLE*/
+$Colors: (
+    primary: rgba(182, 147, 82, 0.6),
+    secondary: rgba(0, 0, 0, 0.5),
+    alternative: rgba(0, 0, 0, 0.15),
+    text-p: rgb(255, 255, 255),
+    text-a: #1a1a1a,
+    h2: rgba(182, 147, 82, 0.35),
+    text-h2: rgb(201, 197, 175),
+);    
+    $primary: rgba(182, 147, 82, 0.6);
+    $secondary: rgba(0, 0, 0, 0.5);
+    $alternative: rgba(0, 0, 0, 0.15);
+    $text-p: rgb(255, 255, 255);
+    $text-a: #1a1a1a;
+
+/* FONT-FAMILY  MAP AND VARIABLE*/
+
+    $font-family: (
+        principal: 'barlow' sans-serif,
+        title: 'montserrat' sans-serif,
+    );
+    
+        $font-principal: 'barlow', sans-serif;
+        $font-title:'montserrat', sans-serif;
+
+
  
