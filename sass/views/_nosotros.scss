@@ -23,14 +23,10 @@
             padding: $spacing-medium;
             border-radius: 15px;
         }
-        .container__anto{
-            display: flex;
-            flex-wrap: wrap;
-            background-color: $secondary;
-            gap: $spacing-small;
+        .container__anto{            
+            @extend .container__sofia;           
             text-align: right;
             padding: $spacing-medium;
-            justify-content: flex-end;
-            border-radius: 15px;
+            justify-content: flex-end;            
         }
 }

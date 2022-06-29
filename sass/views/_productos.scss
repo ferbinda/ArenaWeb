@@ -8,16 +8,17 @@
         img{
             margin-top: $spacing-xsmall ;
             width: 297px;
-            border-radius: 15px;
+            border-radius: $spacing-small;
         }
         .main__producto {
-            width: 100%;
-            background-color: $secondary;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            padding: $spacing-small;
-            border-radius: 15px;
+            @include container-prod(100%, map-get($Colors,secondary), flex, column, wrap, $spacing-small, $spacing-small);
+            // width: 100%;
+            // background-color: $secondary;
+            // display: flex;
+            // flex-direction: column;
+            // flex-wrap: wrap;
+            // padding: $spacing-small;
+            // border-radius: $spacing-small;
                 
                 p {
                     text-align: center;

@@ -39,6 +39,7 @@ h1 {
   padding: 10px;
   background-color: rgba(182, 147, 82, 0.6); }
 
+/* mixing */
 /* PARTIALS */
 .nav {
   display: flex;
@@ -151,7 +152,7 @@ h1 {
   .container_main img {
     margin-top: 1rem;
     width: 297px;
-    border-radius: 15px; }
+    border-radius: 1.5rem; }
   .container_main .main__producto {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -159,7 +160,7 @@ h1 {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 1.5rem;
-    border-radius: 15px; }
+    border-radius: 1.5rem; }
     .container_main .main__producto p {
       text-align: center;
       color: white;
@@ -186,7 +187,7 @@ h1 {
     width: 65%; }
   .nosotros_container img {
     border-radius: 15px; }
-  .nosotros_container .container__sofia {
+  .nosotros_container .container__sofia, .nosotros_container .container__anto {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -194,14 +195,9 @@ h1 {
     padding: 2.5rem;
     border-radius: 15px; }
   .nosotros_container .container__anto {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.5);
-    gap: 1.5rem;
     text-align: right;
     padding: 2.5rem;
-    justify-content: flex-end;
-    border-radius: 15px; }
+    justify-content: flex-end; }
 
 .container_main {
   margin: 1.5rem 5rem;
@@ -213,7 +209,7 @@ h1 {
   .container_main img {
     margin-top: 1rem;
     width: 297px;
-    border-radius: 15px; }
+    border-radius: 1.5rem; }
   .container_main .main__producto {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -270,7 +266,7 @@ h1 {
     justify-content: space-around;
     text-align: center;
     padding: 1rem; }
-  .container__sofia {
+  .container__sofia, .nosotros_container .container__anto {
     padding: 1rem;
     justify-content: space-around;
     text-align: center; }

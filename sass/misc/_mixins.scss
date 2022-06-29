@@ -1,0 +1,11 @@
+
+/* mixing */
+@mixin container-prod($width, $background-color, $display, $flex-direction, $flex-wrap, $paddin, $border-radius) {
+    width:$width;
+    background-color: $background-color;
+    display: $display; 
+    flex-direction: $flex-direction; 
+    flex-wrap: $flex-wrap; 
+    padding: $paddin; 
+    border-radius: $border-radius;
+}
