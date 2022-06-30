@@ -26,7 +26,6 @@
         .container__anto{            
             @extend .container__sofia;           
             text-align: right;
-            padding: $spacing-medium;
             justify-content: flex-end;            
         }
 }

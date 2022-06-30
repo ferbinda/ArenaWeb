@@ -196,7 +196,6 @@ h1 {
     border-radius: 15px; }
   .nosotros_container .container__anto {
     text-align: right;
-    padding: 2.5rem;
     justify-content: flex-end; }
 
 .container_main {
@@ -228,7 +227,7 @@ h1 {
       color: #c9c5af;
       font-family: "montserrat" sans-serif;
       padding-top: 5px;
-      padding-bottom: 5px; }
+      padding-bottom: 15px; }
 
 /* MEDIA QUERIES */
 /*NAV MEDIAQ */
