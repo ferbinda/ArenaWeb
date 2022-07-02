@@ -2,7 +2,7 @@
 
 .nosotros_container{
     display:flex;
-    padding: $spacing-large;
+    margin: $spacing-medium;
     font-family: $font-principal;
     color: $text-p;
     font-size: $text-small;
@@ -22,10 +22,12 @@
             background-color: $secondary;
             padding: $spacing-medium;
             border-radius: 15px;
+            margin-bottom: $spacing-small
         }
         .container__anto{            
             @extend .container__sofia;           
             text-align: right;
-            justify-content: flex-end;            
+            justify-content: flex-end;     
+            margin-top: $spacing-small;       
         }
 }

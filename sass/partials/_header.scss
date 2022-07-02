@@ -49,6 +49,9 @@
                     ul {
                     display: none;
                     position: absolute;
+                    background-color: rgb(182, 147, 82);
+                    color: $text-p;
+                    border-radius: 15px;
                     }
                     &:hover ul {
                         display: flex;
@@ -58,10 +61,12 @@
                     .form__input {
                         font-size: $text-xsmall;
                         input{
-                            background: rgba(182, 147, 82, 0.2);
-                            border: none;    
+                            background: $alternative;
+                            border: $alternative 1px solid;
+                            border-radius: 15px;    
                             outline: none;
                             font-size: $text-p; 
+                            color: $text-p;
                                 &:active{
                                     background: transparent;
                                 }
@@ -71,8 +76,10 @@
                         }
                         .input__button{
                             background-color:transparent;
-                            border: $primary 1px solid;
-                            border-radius:15px;
+                            padding: 5px;
+                            border: $alternative 1px solid;
+                            border-radius: 15px;
+                            color: $text-p;
                         }
                     }
 

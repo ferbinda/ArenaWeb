@@ -1,0 +1,64 @@
+/* NUEVO USUARIO */
+
+.form_container{
+    margin: $spacing-large $spacing-medium;
+    background-color: $secondary;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+        .form {
+            min-width: 320px;
+            flex: 1;
+            text-align: center;  
+            padding: $spacing-medium;
+            order: 2;
+                & textarea{
+                    min-height: 100px;
+                }
+                .form_input input{
+                    width: 100%;
+                    padding: 7px;
+                    margin: 9px 0px;
+                    border: none;
+                    border-bottom: 3px solid $primary;
+                    background: transparent;
+                    color: white;
+                    outline: none;
+                        &:focus{
+                        background: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.15)); 
+                        }
+                        & [type= "submit"]{
+                            background: rgba(0, 0, 0, 0.5);
+                            border-bottom: none;
+                            padding: 10px;    
+                            transition: 2s;
+                            min-width: 100%
+                        }
+                        & [type= "submit"]:hover{
+                            background: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.5));
+                        }
+                        
+                        & [type= "submit"]:focus{
+                            background: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.15));
+                        }
+                        
+                        & [type= "submit"]:active{
+                            background: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.15));
+                        }
+                    
+                }
+
+        }
+        .form_img {
+            flex: 1;
+            display: flex;
+            min-width: 230px;
+            order: 1;
+                img{
+                    width: 65%;
+                    margin: auto;
+                }
+        }
+}
