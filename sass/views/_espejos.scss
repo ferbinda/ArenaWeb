@@ -12,13 +12,6 @@
         }
         .main__producto {
             @include container-prod(100%, map-get($Colors,secondary), flex, column, wrap, $spacing-small, $spacing-small);
-            // width: 100%;
-            // background-color: map-get($Colors, secondary);
-            // display: flex;
-            // flex-direction: column;
-            // flex-wrap: wrap;
-            // padding: $spacing-small;
-            // border-radius: $spacing-small;
                 p {
                     text-align: center;
                     color: map-get($Colors, text-p);

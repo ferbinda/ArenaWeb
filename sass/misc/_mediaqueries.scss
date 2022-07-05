@@ -81,3 +81,30 @@
     
 }
 
+/* FORMULARIO */
+
+@media screen and (max-width: 768px) {
+    .nav__usuario{
+        .usuario__form{
+            display: none;
+        }
+    
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    .form_container{
+        margin: $spacing-small $spacing-xsmall;
+    }
+    .form_img{
+        padding-top: $spacing-xsmall;
+    }
+    .nav__usuario{
+        .usuario__form{
+            display: none;
+        }
+    }
+
+}
+

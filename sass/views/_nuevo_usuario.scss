@@ -1,7 +1,7 @@
 /* NUEVO USUARIO */
 
 .form_container{
-    margin: $spacing-large $spacing-medium;
+    margin: $spacing-large $spacing-large;
     background-color: $secondary;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
     border-radius: 15px;
         .form {
             min-width: 320px;
-            flex: 1;
+            flex: 2;
             text-align: center;  
             padding: $spacing-medium;
             order: 2;

@@ -1,0 +1,29 @@
+/* ALMOHADONES */
+
+.container_main {
+    margin: $spacing-small $spacing-large;
+    font-family: map-get($font-family,principal );
+    text-align: center;
+    display: flex;
+    gap: $spacing-medium;
+    font-size: map-get($font-family, principal);
+        img{
+            margin: $spacing-xsmall auto;
+            border-radius: $spacing-small;
+            width: 297px;
+        }
+        .main__producto {
+            @include container-prod(100%, map-get($Colors,secondary), flex, column, wrap, $spacing-small, $spacing-small);
+                p {
+                    text-align: center;
+                    color: map-get($Colors, text-p);
+                    padding: $spacing-xsmall $spacing-small;
+                }
+                h2 {
+                    width: 100%;
+                    background-color: map-get($Colors, h2);
+                    color: map-get($Colors, text-h2);
+                    font-family: map-get($font-family , title );
+                }
+        }
+}

@@ -12,14 +12,6 @@
         }
         .main__producto {
             @include container-prod(100%, map-get($Colors,secondary), flex, column, wrap, $spacing-small, $spacing-small);
-            // width: 100%;
-            // background-color: $secondary;
-            // display: flex;
-            // flex-direction: column;
-            // flex-wrap: wrap;
-            // padding: $spacing-small;
-            // border-radius: $spacing-small;
-                
                 p {
                     text-align: center;
                     color: $text-p;
@@ -30,8 +22,6 @@
                     background-color: rgba(182, 147, 82, 0.35);
                     color: rgb(201, 197, 175);
                     font-family: $font-title;
-                    padding-top: 5px;
-                    padding-bottom: 5px;
                 }
         }
 }
