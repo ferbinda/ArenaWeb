@@ -114,6 +114,8 @@ h1 {
   .nav .nav__logo img {
     width: 250px;
     padding-top: 25px; }
+  .nav .nav__carrito {
+    display: none; }
 
 .footer .footer__h4 {
   margin-top: 2.5rem;
