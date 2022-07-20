@@ -11,9 +11,14 @@
 }
 
 @media screen and (max-width:768px) {
-    .nav__principal{
-        font-size: $text-small;
+    .nav{
+        padding: 0 $spacing-small;
+            .nav__principal{
+        padding: 0;
+        font-size: 2em;
+        }
     }
+    
     
     h1 {
         font-size: $text-medium;  

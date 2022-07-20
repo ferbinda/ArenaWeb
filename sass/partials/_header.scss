@@ -1,27 +1,30 @@
-.nav{
+.navbar{
+    
     display: flex;
     flex-wrap: wrap;
     background-image: linear-gradient(to bottom, rgba(182, 147, 82, 0.5), rgba(182, 147, 82, 0.3), transparent);
     padding-left: $spacing-large;
     padding-right: $spacing-large;
-    justify-content: space-evenly;
-        .nav__button{
-            color: $text-p;
-            font-size: $text-large;
-            background-color: transparent;
-            border: none;
-            padding: 0 $spacing-small;
-            display: none;
-            align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+
+        .navbar-brand{
+            align-items: flex-end;
+            justify-content: space-between;
         }
+
+        .collapse .navbar-collapse .nav{
+            justify-content: space-evenly;
+        }
+ 
         .nav__principal{
             display: flex;
             flex-wrap: wrap;
-            align-items: flex-end;
+            
             gap: $spacing-large;
             font-family: $font-title;
             font-weight: bold;
-            font-size: $text-medium;
+            font-size: $text-small;
                 a{
                 text-decoration: none;
                 color: $text-a;    
@@ -34,23 +37,12 @@
                     background-color: transparent;
                     border-bottom: none;
                 }
-                .nav__productos {
-                    ul{
-                        display: none;
-                        position: absolute;
-                    }
-                    .nav__productos:hover ul {
-                        display: flex;
-                        gap: 24px;
-                        padding-top: 15px;    
-                    }                    
-                 }
+                
                 .nav__usuario{ 
                     ul {
                     display: none;
                     position: absolute;
-                    background-color: rgb(182, 147, 82);
-                    color: $text-p;
+                    background-color: rgb(191, 171, 131);                    
                     border-radius: 15px;
                     }
                     &:hover ul {
@@ -79,23 +71,32 @@
                             padding: 5px;
                             border: $alternative 1px solid;
                             border-radius: 15px;
-                            color: $text-p;
+                            
                         }
                     }
-
-                }
-                .nav__carrito img{
-                    width: 30px;
+                    
                 }
                 
         }
-        .nav__logo img{
+        .nav__logo .logo__link img{
             width: 250px;
+            height: 250px;
             padding-top: 25px;        
         }
         
-        .nav__carrito{
+        .menu-producto{
             display: none;
-        }
-        
+            position: absolute;
+            background-color: rgb(191, 171, 131);            
+            border-radius: 15px;
+            padding: 15px;
+                ul{
+                    padding: 0;                    
+                }
+                :hover{
+                    display:block
+                }
+                
+                    
+        }              
 }

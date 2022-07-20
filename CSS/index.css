@@ -41,81 +41,76 @@ h1 {
 
 /* mixing */
 /* PARTIALS */
-.nav {
+.navbar {
   display: flex;
   flex-wrap: wrap;
   background-image: linear-gradient(to bottom, rgba(182, 147, 82, 0.5), rgba(182, 147, 82, 0.3), transparent);
   padding-left: 5rem;
   padding-right: 5rem;
-  justify-content: space-evenly; }
-  .nav .nav__button {
-    color: white;
-    font-size: 5em;
-    background-color: transparent;
-    border: none;
-    padding: 0 1.5rem;
-    display: none;
-    align-items: center; }
-  .nav .nav__principal {
+  justify-content: space-between;
+  align-items: flex-end; }
+  .navbar .navbar-brand {
+    align-items: flex-end;
+    justify-content: space-between; }
+  .navbar .collapse .navbar-collapse .nav {
+    justify-content: space-evenly; }
+  .navbar .nav__principal {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
     gap: 5rem;
     font-family: "montserrat", sans-serif;
     font-weight: bold;
-    font-size: 2.5em; }
-    .nav .nav__principal a {
+    font-size: 1.5em; }
+    .navbar .nav__principal a {
       text-decoration: none;
       color: #1a1a1a; }
-    .nav .nav__principal li a:hover {
+    .navbar .nav__principal li a:hover {
       border-bottom: rgba(0, 0, 0, 0.5) solid 2px;
       transition: .1s; }
-    .nav .nav__principal .logo__link:hover {
+    .navbar .nav__principal .logo__link:hover {
       background-color: transparent;
       border-bottom: none; }
-    .nav .nav__principal .nav__productos ul {
-      display: none;
-      position: absolute; }
-    .nav .nav__principal .nav__productos .nav__productos:hover ul {
-      display: flex;
-      gap: 24px;
-      padding-top: 15px; }
-    .nav .nav__principal .nav__usuario ul {
+    .navbar .nav__principal .nav__usuario ul {
       display: none;
       position: absolute;
-      background-color: #b69352;
-      color: white;
+      background-color: #bfab83;
       border-radius: 15px; }
-    .nav .nav__principal .nav__usuario:hover ul {
+    .navbar .nav__principal .nav__usuario:hover ul {
       display: flex;
       gap: 24px;
       padding: 15px; }
-    .nav .nav__principal .nav__usuario .form__input {
+    .navbar .nav__principal .nav__usuario .form__input {
       font-size: 0.8em; }
-      .nav .nav__principal .nav__usuario .form__input input {
+      .navbar .nav__principal .nav__usuario .form__input input {
         background: rgba(0, 0, 0, 0.15);
         border: rgba(0, 0, 0, 0.15) 1px solid;
         border-radius: 15px;
         outline: none;
         font-size: white;
         color: white; }
-        .nav .nav__principal .nav__usuario .form__input input:active {
+        .navbar .nav__principal .nav__usuario .form__input input:active {
           background: transparent; }
-        .nav .nav__principal .nav__usuario .form__input input:focus {
+        .navbar .nav__principal .nav__usuario .form__input input:focus {
           background: transparent; }
-      .nav .nav__principal .nav__usuario .form__input .input__button {
+      .navbar .nav__principal .nav__usuario .form__input .input__button {
         background-color: transparent;
         padding: 5px;
         border: rgba(0, 0, 0, 0.15) 1px solid;
-        border-radius: 15px;
-        color: white; }
-    .nav .nav__principal .nav__carrito img {
-      width: 30px; }
-  .nav .nav__logo img {
+        border-radius: 15px; }
+  .navbar .nav__logo .logo__link img {
     width: 250px;
+    height: 250px;
     padding-top: 25px; }
-  .nav .nav__carrito {
-    display: none; }
+  .navbar .menu-producto {
+    display: none;
+    position: absolute;
+    background-color: #bfab83;
+    border-radius: 15px;
+    padding: 15px; }
+    .navbar .menu-producto ul {
+      padding: 0; }
+    .navbar .menu-producto :hover {
+      display: block; }
 
 .footer .footer__h4 {
   margin-top: 2.5rem;
@@ -249,13 +244,15 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  border-radius: 15px; }
+  border-radius: 15px;
+  font-size: 50px; }
   .form_container .form {
     min-width: 320px;
     flex: 2;
     text-align: center;
     padding: 2.5rem;
-    order: 2; }
+    order: 2;
+    font-size: 0.4em; }
     .form_container .form textarea {
       min-height: 100px; }
     .form_container .form .form_input input {
@@ -362,8 +359,11 @@ h1 {
     gap: 70px; } }
 
 @media screen and (max-width: 768px) {
-  .nav__principal {
-    font-size: 1.5em; }
+  .nav {
+    padding: 0 1.5rem; }
+    .nav .nav__principal {
+      padding: 0;
+      font-size: 2em; }
   h1 {
     font-size: 2.5em; } }
 
