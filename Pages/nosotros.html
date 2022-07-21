@@ -24,63 +24,46 @@
 <body>
     <!--comienzo del header-->
     <header>
-        <nav class="nav">
-            <picture class="nav__logo">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="navbar-brand nav__logo container-fluid">
                 <a href="../index.html" class="logo__link">
                     <img src="../IMG/2.png" alt="logo arena deco home">
-                </a>
-            </picture>
-            <button class="nav__button">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="nav__principal">
-                <li class="nav__nosotros">
-                    <a href="../Pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav__productos">
-                    <a href="../Pages/Productos.html">Productos</a>
-                    <ul>
-                        <li class="productos__espejos">
-                            <a href="../Pages/productos/espejos.html">Espejos</a>
-                        </li>
-                        <li class="productos__almohadones">
-                            <a href="../Pages/productos/almohadones.html">Almohadones</a>
-                        </li>
-                        <li class="productos__tapices">
-                            <a href="../Pages/productos/tapices.html">Tapices</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav__usuario">
-                    <div>
-                        <a href="../Pages/Iniciar_sesion.html">Iniciar sesión</a>
-                    </div>
-                    <form action="" method="post" class="usuario__form">
-                        <ul>
-                            <li class="form__input">
-                                <label for="email">Email</label>
-                                <input type="email" id="mail" name="user name" required>
-                            </li>
-                            <li class="form__input">
-                                <label for="contraseña">Contraseña</label>
-                                <input type="password" name="contraseña" id="password" required>
-                            </li>
-                            <li class="form__input">
-                                <button class= "input__button" type="submit">Enviar</button>
-                            </li>
-                        </ul>
-                    </form>
-                </li>
-                <li class="nav__new_user">
-                    <div >
-                        <a href="../Pages/nuevo_usuario.html">¿Nuevo usuario?</a>
-                    </div>
-                </li>
-                <li class="nav__carrito">
-                    <a href="../Pages/carrito.html"> <img src="../IMG/carrito.png" alt="carrito de compras" >
-                    </a>
-                </li>
-            </ul>
+                </a>            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__principal">
+                    <li class="nav-item">
+                        <a class="nav-item  nav__nosotros" aria-current="page" href="../Pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-item" href="../Pages/Productos.html" >Productos</a>
+                    </li>
+                    <li class="nav-item nav__usuario">
+                        <a class= "nav-item nav__usuario" href="../Pages/Iniciar_sesion.html">Iniciar sesión</a>                    
+                        <form action="" method="post" class="usuario__form">
+                            <ul>
+                                <li class="form__input">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="mail" name="user name" required>
+                                </li>
+                                <li class="form__input">
+                                    <label for="contraseña">Contraseña</label>
+                                    <input type="password" name="contraseña" id="password" required>
+                                </li>
+                                <li class="form__input">
+                                    <button class= "input__button" type="submit">Enviar</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item  nav__new_user" aria-current="page" href="../Pages/nuevo_usuario.html">Registrate</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
         </nav>
     </header>
     <main>

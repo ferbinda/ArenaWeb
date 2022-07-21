@@ -2,29 +2,22 @@
     
     display: flex;
     flex-wrap: wrap;
-    background-image: linear-gradient(to bottom, rgba(182, 147, 82, 0.5), rgba(182, 147, 82, 0.3), transparent);
+    background-image: linear-gradient(to bottom, rgba(182, 147, 82, 0.5), rgba(182, 147, 82, 0.3), rgba(182, 147, 82, 0.1), transparent);
     padding-left: $spacing-large;
     padding-right: $spacing-large;
-    justify-content: space-between;
-    align-items: flex-end;
 
         .navbar-brand{
             align-items: flex-end;
-            justify-content: space-between;
-        }
-
-        .collapse .navbar-collapse .nav{
-            justify-content: space-evenly;
+            
         }
  
         .nav__principal{
             display: flex;
             flex-wrap: wrap;
-            
             gap: $spacing-large;
             font-family: $font-title;
-            font-weight: bold;
-            font-size: $text-small;
+            font-weight:bolder;
+            font-size: $text-base;            
                 a{
                 text-decoration: none;
                 color: $text-a;    
@@ -79,24 +72,14 @@
                 
         }
         .nav__logo .logo__link img{
-            width: 250px;
-            height: 250px;
+            width: 275px;
+            height: 275px;
             padding-top: 25px;        
         }
         
-        .menu-producto{
-            display: none;
-            position: absolute;
-            background-color: rgb(191, 171, 131);            
-            border-radius: 15px;
-            padding: 15px;
-                ul{
-                    padding: 0;                    
-                }
-                :hover{
-                    display:block
-                }
-                
-                    
-        }              
+        .navbar-toggler-icon{
+            font-size: 45px;
+            color: white;
+        }
+        
 }
