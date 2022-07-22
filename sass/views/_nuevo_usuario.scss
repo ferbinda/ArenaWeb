@@ -26,6 +26,7 @@
                     background: transparent;
                     color: white;
                     outline: none;
+                    font-size: $text-base;
                         &:focus{
                         background: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.15)); 
                         }

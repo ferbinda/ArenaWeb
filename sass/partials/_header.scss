@@ -1,50 +1,36 @@
 .nav{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    
     background-image: linear-gradient(to bottom, rgba(182, 147, 82, 0.5), rgba(182, 147, 82, 0.3), transparent);
     padding-left: $spacing-large;
     padding-right: $spacing-large;
-    justify-content: space-evenly;
-        .nav__button{
-            color: $text-p;
-            font-size: $text-large;
-            background-color: transparent;
-            border: none;
-            padding: 0 $spacing-small;
-            display: none;
-            align-items: center;
-        }
+    
         .nav__principal{
             display: flex;
             flex-wrap: wrap;
             align-items: flex-end;
+            justify-content: center;
             gap: $spacing-large;
             font-family: $font-title;
             font-weight: bold;
             font-size: $text-medium;
+            padding: 0!important;
                 a{
                 text-decoration: none;
                 color: $text-a;    
                 }
                 li a:hover{
                     border-bottom: rgba(0, 0, 0, 0.5) solid 2px;
-                    transition: .1s;
+                    transition-timing-function: ease-in-out;
+                    transition: .2s;
+                    
                 }
                 .logo__link:hover{
                     background-color: transparent;
                     border-bottom: none;
                 }
-                .nav__productos {
-                    ul{
-                        display: none;
-                        position: absolute;
-                    }
-                    .nav__productos:hover ul {
-                        display: flex;
-                        gap: 24px;
-                        padding-top: 15px;    
-                    }                    
-                 }
                 .nav__usuario{ 
                     ul {
                     display: none;
@@ -84,18 +70,16 @@
                     }
 
                 }
-                .nav__carrito img{
-                    width: 30px;
-                }
                 
         }
-        .nav__logo img{
+        .nav__logo {
+            flex-grow: 10;
+            flex-wrap: wrap;
+            text-align: center;
+            
+            img{
             width: 250px;
             padding-top: 25px;        
-        }
-        
-        .nav__carrito{
-            display: none;
-        }
-        
+            }
+        }  
 }

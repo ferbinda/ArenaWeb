@@ -5,19 +5,49 @@
         font-size: $text-medium;
     }    
     .nav__principal{
-        font-size: $text-small;
-        gap: 70px;
+        flex-wrap: wrap;
+        font-size: $text-xsmall;
+        gap: 60px;
     }
 }
 
-@media screen and (max-width:768px) {
-    .nav__principal{
-        font-size: $text-small;
+@media screen and (max-width:425px) {
+    .nav{
+        .nav__principal{
+            display: grid;
+            grid-template-columns: 1;
+            grid-template-rows: 4;
+            text-align: center;
+            font-size: $text-base;
+            
+        }
+       
+        .nav__logo{
+            text-align: center;
+        }
     }
-    
+
     h1 {
-        font-size: $text-medium;  
+        font-size: 3em;  
+        }
+    
+}
+
+@media screen and (max-width:768px) {
+    .nav{
+        .nav__principal{
+            flex-wrap: wrap;
+            padding: 0;
+            font-size: $text-base;
+        }
+        .nav__logo{
+            text-align: center;
+        }
     }
+    h1 {
+            font-size: 3em;  
+        }
+    
 }
 
 /* FOOTER MEDIAQ */
