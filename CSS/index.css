@@ -179,24 +179,32 @@ h1 {
   color: white;
   font-size: 1.5em;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center; }
-  .nosotros_container p {
-    width: 65%; }
+  flex-wrap: wrap; }
   .nosotros_container img {
     border-radius: 15px; }
-  .nosotros_container .container__sofia, .nosotros_container .container__anto {
+  .nosotros_container .container__sofia {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2.5rem;
     border-radius: 15px;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    align-items: center; }
   .nosotros_container .container__anto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
     text-align: right;
     justify-content: flex-end;
-    margin-top: 1.5rem; }
+    margin-top: 1.5rem;
+    align-items: center; }
 
 .container_main {
   margin: 1.5rem 5rem;
@@ -386,20 +394,21 @@ h1 {
     width: 10%; } }
 
 /* NOSOTROS MEDIAQ */
-@media screen and (max-width: 1424px) {
+@media screen and (max-width: 1024px) {
   .nosotros_container {
     padding: 0;
-    font-size: 1.5em; }
-  .container__anto {
-    justify-content: space-around;
-    text-align: center;
-    padding: 1rem; }
-  .container__sofia, .nosotros_container .container__anto {
-    padding: 1rem;
-    justify-content: space-around;
+    font-size: 1.5em;
     text-align: center; }
-  .container__anto .anto__img {
-    order: -10; } }
+    .nosotros_container .container__anto {
+      justify-content: center;
+      text-align: center;
+      padding: 1rem; }
+      .nosotros_container .container__anto .anto__img {
+        order: -10; }
+    .nosotros_container .container__sofia {
+      padding: 1rem;
+      justify-content: space-around;
+      text-align: center; } }
 
 /* MAIN PRODUCTOS GRAL. MEDIA Q*/
 @media screen and (max-width: 1255px) {

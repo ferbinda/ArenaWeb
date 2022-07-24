@@ -71,27 +71,31 @@
 }
 
 /* NOSOTROS MEDIAQ */
-@media screen and (max-width: 1424px) {
+@media screen and (max-width: 1024px) {
     .nosotros_container{
         padding: 0;
         font-size: $text-small;
+        text-align: center;
+        .container__anto{
+            justify-content:center;
+            text-align: center;
+            padding: $spacing-xsmall;
+            .anto__img{
+                order: -10;
+            }
+        }
+        .container__sofia{
+            padding: $spacing-xsmall;
+            justify-content:space-around;
+            text-align: center;
+        }
     
     }
     
-    .container__anto{
-        justify-content:space-around;
-        text-align: center;
-        padding: $spacing-xsmall;
-    }
-    .container__sofia{
-        padding: $spacing-xsmall;
-        justify-content:space-around;
-        text-align: center;
-    }
+    
+    
 
-    .container__anto .anto__img{
-        order: -10;
-    }
+    
     
 }
 

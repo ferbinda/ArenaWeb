@@ -8,26 +8,34 @@
     font-size: $text-small;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-        p{
-            width: 65%;
-        }
+    
+       
         img{
             border-radius: 15px;
         }
         .container__sofia{
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
             gap: $spacing-small;
             background-color: $secondary;
             padding: $spacing-medium;
             border-radius: 15px;
-            margin-bottom: $spacing-small
+            margin-bottom: $spacing-small;
+            align-items: center;
         }
-        .container__anto{            
-            @extend .container__sofia;           
+        .container__anto{       
+            width: 100%;     
+            display: flex;
+            flex-wrap: wrap;
+            gap: $spacing-small;
+            background-color: $secondary;
+            padding: $spacing-medium;
+            border-radius: 15px;
+            margin-bottom: $spacing-small;           
             text-align: right;
             justify-content: flex-end;     
-            margin-top: $spacing-small;       
+            margin-top: $spacing-small;    
+            align-items: center;   
         }
 }
